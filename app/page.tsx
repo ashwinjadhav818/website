@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Hyperlink from "@/components/Hyperlink";
 
 export default function Home() {
     return (
@@ -8,8 +8,8 @@ export default function Home() {
                 <h2 className="text-xl font-medium">Developer. Student</h2>
 
                 <div className="flex flex-row gap-4">
-                    <Link href="/blog">Blog</Link>
-                    <Link href="/about">About</Link>
+                    <Hyperlink to="/blog" data="Blog" />
+                    <Hyperlink to="/about" data="About" />
                 </div>
             </div>
             <div className="mt-4">
